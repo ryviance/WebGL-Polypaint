@@ -28,33 +28,36 @@
         <!-- Sliders to control RGB color -->
         <div class="slider-container">
             <label for="rSlider">Red: </label>
-            <input type="range" id="rSlider" min="0" max="255" value="255">
-            <span id="rValue">255</span>
+            <input type="range" id="rSlider" min="0" max="255" value="0">
+            <span id="rSliderValue">0</span>
         </div>
 
         <div class="slider-container">
             <label for="gSlider">Green: </label>
             <input type="range" id="gSlider" min="0" max="255" value="0">
-            <span id="gValue">0</span>
+            <span id="gSliderValue">0</span>
         </div>
 
         <div class="slider-container">
             <label for="bSlider">Blue: </label>
             <input type="range" id="bSlider" min="0" max="255" value="0">
-            <span id="bValue">0</span>
+            <span id="bSliderValue">0</span>
         </div>
 
         <!-- Slider for point size -->
         <div class="slider-container">
             <label for="sizeSlider">Point Size: </label>
             <input type="range" id="sizeSlider" min="1" max="50" value="10">
-            <span id="sizeValue">10</span>
+            <span id="sizeSliderValue">10</span>
         </div>
 
         <!-- Mode selection buttons -->
         <div class="slider-container">
             <button id="pointButton">Point Mode</button>
             <button id="triangleButton">Triangle Mode</button>
+            <button id="circleButton">Circle</button>
+            <input type="range" id="circleSegmentsSlider" min="3" max="100" value="30" />
+            <span id="circleSegmentsSliderValue">30</span>
         </div>
 
         <!-- Clear canvas Button -->
